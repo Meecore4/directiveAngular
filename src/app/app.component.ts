@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'directiveAngular';
+  title = 'Bonjour';
+
+  isAdmin: Boolean = true;
+
+  clickButton(){
+      this.isAdmin= !this.isAdmin
+  }
+
 }
